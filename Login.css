@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(120deg, #2980b9, rgba(48, 17, 95, 255));
+  height: 100vh;
+  overflow: hidden;
+}
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background: white;
+  border-radius: 50px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+}
+.center h1 {
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(48, 17, 95, 255);
+}
+.center form {
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+form .txt_field {
+  position: relative;
+  border-bottom: 2px solid rgba(48, 17, 95, 255);
+  margin: 30px 0;
+}
+.txt_field input {
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+}
+.txt_field label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: gray;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.5s;
+}
+.txt_field span::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: gray;
+  transition: 0.5s;
+}
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label {
+  top: -5px;
+  color: gray;
+}
+.txt_field input:focus ~ span::before,
+.txt_field input:valid ~ span::before {
+  width: 100%;
+}
+.pass {
+  margin: -5px 0 20px 5px;
+  color: gray;
+  cursor: pointer;
+}
+.pass:hover {
+  text-decoration: underline;
+}
+input[type="submit"] {
+  width: 100%;
+  height: 50px;
+  border: 1px solid;
+  background: rgba(161, 101, 253, 255);
+  border-radius: 25px;
+  font-size: 18px;
+  color: rgba(48, 17, 95, 255);
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+}
+input[type="submit"]:hover {
+  border-color: white;
+  transition: 0.5s;
+}
+.signup_link {
+  margin: 30px 0;
+  text-align: center;
+  font-size: 16px;
+  color: gray;
+}
+.signup_link a {
+  color: rgba(48, 17, 95, 255);
+  text-decoration: none;
+}
+.signup_link a:hover {
+  text-decoration: underline;
+}
+
+.left-side,
+.right-side {
+  height: 100vh;
+  width: 100%;
+}
+.left-side {
+  background: white;
+}
+.right-side {
+  background: rgba(48, 17, 95, 255);
+}
+
+.button {
+  background-color: rgba(48, 17, 95, 255);
+  border: none;
+  color: white;
+  font-weight: bolder;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50px;
+  position: absolute;
+  left: 40%;
+  top: 50%;
+}
+
+.logo_text {
+  padding: 15px 30px;
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+  align-items: center;
+  color: rgba(48, 17, 95, 255);
+  margin-top: 20px;
+  left: 30%;
+  top: 25%;
+}
+
+.logo_text h2 {
+  margin: 0;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+}
+
+.logo_text p {
+  margin: 0;
+  padding: 15px;
+  font-family: "Poppins", sans-serif;
+}

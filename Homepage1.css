@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+}
+
+header {
+  background-color: rgba(248, 248, 248, 1);
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.search-bar input {
+  display: flex;
+  height: 48px;
+  width: 1000px;
+}
+
+.search-bar input::placeholder {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  padding: 12px;
+}
+
+#logo-text {
+  padding: 18px 10px;
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: rgba(47, 17, 96, 1);
+  text-decoration: none;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(248, 248, 248, 1);
+  display: flex;
+  min-height: 8vh;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+.nav-page {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0;
+  align-items: center;
+}
+
+.nav-page li a {
+  padding: 12px 12px;
+  list-style: none;
+  text-decoration: none;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 56;
+  height: 56px;
+  border-radius: 50%;
+}
+
+input {
+  background-color: rgba(248, 248, 248, 1);
+  border: 1px solid;
+  border-radius: 24px;
+  height: 40px;
+}
+
+.nav-page li {
+  font-family: "Poppins", sans-serif;
+  color: rgba(47, 17, 96, 1);
+}
+
+#profile-name {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(47, 17, 96, 1);
+  text-decoration: none;
+}
+
+.category {
+  list-style: none;
+  top: 62px;
+  padding-left: 20px;
+  padding-right: 20px;
+  overflow: hidden;
+  background-color: rgba(248, 248, 248, 1);
+}
+
+.category li {
+  display: flex;
+  float: left;
+  list-style-type: none;
+  text-align: center;
+  /* padding: 14px 16px; */
+}
+
+.category li a:link,
+.category li a:visited {
+  /** background-color: rgb(235, 215, 255); **/
+  color: rgba(47, 17, 96, 1);
+  border-radius: 20pc;
+  padding: 14px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.category li a:hover,
+.category li a:active {
+  background-color: rgb(246, 238, 255);
+  color: rgba(98, 0, 255, 1);
+}
+
+.background {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+}
+.background h1 {
+  color: rgba(255, 255, 255, 1);
+  font-size: 48px;
+}
+.background p {
+  color: rgba(255, 255, 255, 1);
+  font-size: 20px;
+}
+
+.background input {
+  color: black;
+  background-color: antiquewhite;
+  width: 900px;
+  height: 60px;
+  border-radius: 20px;
+}
